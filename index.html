@@ -4,180 +4,233 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>Compare Credit Cards – Side-by-Side Overview 2025</title>
-  <meta name="description"
-        content="Compare credit cards side by side: rewards, travel perks, fees, credit building and more. Independent overview that sends you to full comparisons on Choose.Creditcard.">
+  <title>CompareCards.Creditcard – How Credit Card Comparisons Are Structured</title>
+  <meta name="description" content="CompareCards.Creditcard explains how credit card comparison pages are structured: categories, filters, data points and limitations. Neutral, documentation-style overview linked to the Comparison hub on Choose.Creditcard." />
   <meta name="robots" content="index,follow" />
   <link rel="canonical" href="https://comparecards.creditcard/" />
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Compare Credit Cards – Side-by-Side Overview 2025" />
-  <meta property="og:description"
-        content="Independent entry point for comparing credit cards: rewards, travel, student, secured and credit builder products." />
+  <meta property="og:title" content="CompareCards.Creditcard – How Credit Card Comparisons Are Structured" />
+  <meta property="og:description" content="Learn how card comparison pages organise fees, rewards, protections and eligibility criteria, and how they link back to official documentation." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://comparecards.creditcard/" />
-  <meta property="og:image" content="https://comparecards.creditcard/preview.png" />
+  <meta property="og:image" content="https://choose.creditcard/preview.png?utm_source=comparecards.creditcard&utm_medium=referral&utm_campaign=og_image" />
 
-  <!-- Styles -->
-  <link rel="stylesheet" href="/styles.css" />
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="CompareCards.Creditcard – How Credit Card Comparisons Are Structured" />
+  <meta name="twitter:description" content="Neutral explanation of how credit card comparison tables and pages are assembled, what they can show and what they cannot guarantee." />
+  <meta name="twitter:image" content="https://choose.creditcard/preview.png?utm_source=comparecards.creditcard&utm_medium=referral&utm_campaign=twitter_image" />
 
   <!-- GA4 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-64FE63JQ3H"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){ dataLayer.push(arguments); }
+    function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-64FE63JQ3H');
   </script>
+
+  <!-- Tailwind for utility classes -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Shared minisite styles -->
+  <link rel="stylesheet" href="./styles.css" />
 </head>
 
-<body>
-<header class="nav">
-  <div class="brand">
-    <div class="cc-logo">CC</div>
-    <span>CompareCards.creditcard</span>
-  </div>
-  <nav class="links">
-    <a href="https://fin.creditcard/">Collection</a>
-    <a href="https://choose.creditcard/">Choose</a>
-    <a href="https://directory.creditcard/">Directory</a>
-  </nav>
-</header>
-
-<div class="wrap">
-
-  <!-- HERO -->
-  <section class="hero">
-    <h1>Compare Credit Cards</h1>
-    <p>See how cards differ on fees, rewards, travel perks and credit requirements.</p>
-    <a class="cta"
-       href="https://choose.creditcard/compare?utm_source=comparecards.creditcard&utm_medium=referral&utm_campaign=comparecards_hub">
-      Open Full Comparison on Choose.Creditcard
-    </a>
-  </section>
-
-  <!-- Category tiles -->
-  <section class="section">
-    <h2>Start by choosing what you care about</h2>
-    <p class="small">Most people compare cards based on one primary goal:</p>
-
-    <div class="grid">
-      <a class="card"
-         href="https://choose.creditcard/compare?utm_source=comparecards.creditcard&utm_medium=referral#rewards">
-        <h3>Rewards & cashback</h3>
-        <p class="small">Maximize points, miles or cashback on everyday spend.</p>
-      </a>
-
-      <a class="card"
-         href="https://travels.creditcard/?utm_source=comparecards.creditcard&utm_medium=referral">
-        <h3>Travel & no FX</h3>
-        <p class="small">Cards with no foreign fees, lounges and travel insurance.</p>
-      </a>
-
-      <a class="card"
-         href="https://creditbuilder.creditcard/?utm_source=comparecards.creditcard&utm_medium=referral">
-        <h3>Credit building</h3>
-        <p class="small">Secured and builder cards to improve your score.</p>
-      </a>
-
-      <a class="card"
-         href="https://nofee.creditcard/?utm_source=comparecards.creditcard&utm_medium=referral">
-        <h3>No annual fee</h3>
-        <p class="small">Keep it simple: zero annual fee, transparent pricing.</p>
-      </a>
-
-      <a class="card"
-         href="https://studentcard.creditcard/?utm_source=comparecards.creditcard&utm_medium=referral">
-        <h3>Student cards</h3>
-        <p class="small">For first-time cardholders with limited history.</p>
-      </a>
-
-      <a class="card"
-         href="https://poorcreditcard.creditcard/?utm_source=comparecards.creditcard&utm_medium=referral">
-        <h3>Poor / bad credit</h3>
-        <p class="small">Realistic options when your credit isn’t perfect.</p>
-      </a>
+<body class="bg-slate-950 text-slate-100">
+  <header class="site-header">
+    <div class="nav-inner max-w-6xl">
+      <div class="brand">
+        <div class="cc-logo">CC</div>
+        <div class="brand-text">
+          <div class="brand-title">CompareCards.Creditcard</div>
+          <div class="brand-subtitle">How credit card comparisons are structured</div>
+        </div>
+      </div>
+      <nav class="nav-links" aria-label="Page navigation">
+        <a href="#overview">Overview</a>
+        <a href="#mechanics">How Comparisons Work</a>
+        <a href="#compare">Comparison Hub</a>
+      </nav>
     </div>
-  </section>
+  </header>
 
-  <!-- Simple comparison table -->
-  <section class="section">
-    <h2>Key things to compare</h2>
-    <p class="small">Every comparison table on Choose.Creditcard focuses on a few core dimensions:</p>
-
-    <div class="table-wrap">
-      <table class="table">
-        <thead>
-        <tr>
-          <th>Dimension</th>
-          <th>What to look for</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-          <td>Annual fee</td>
-          <td>Is the fee justified by the rewards, perks and insurance?</td>
-        </tr>
-        <tr>
-          <td>Rewards structure</td>
-          <td>Flat cashback vs. categories (travel, groceries, fuel, etc.).</td>
-        </tr>
-        <tr>
-          <td>Foreign transaction fees</td>
-          <td>0% is preferred if you travel or shop in other currencies.</td>
-        </tr>
-        <tr>
-          <td>Credit requirements</td>
-          <td>What kind of credit history does the card typically require?</td>
-        </tr>
-        <tr>
-          <td>Travel perks</td>
-          <td>Lounge, insurance, fast track, hotel and airline partners.</td>
-        </tr>
-        <tr>
-          <td>Upgrade path</td>
-          <td>Can you move to a better card after 6–18 months of good use?</td>
-        </tr>
-        </tbody>
-      </table>
+  <main class="cc-page">
+    <!-- Breadcrumb -->
+    <div class="cc-breadcrumb">
+      <a href="https://choose.creditcard/?utm_source=comparecards.creditcard&utm_medium=referral&utm_campaign=breadcrumb">Home</a>
+      &nbsp;›&nbsp;
+      CompareCards.Creditcard
     </div>
-  </section>
 
-  <!-- Methodology pointer -->
-  <section class="section">
-    <h2>How comparisons are made</h2>
-    <p class="small">
-      Full comparison tables live on <strong>Choose.Creditcard</strong>. They follow a consistent methodology:
-    </p>
-    <ul class="list">
-      <li>• Separation of editorial rankings and affiliate placements</li>
-      <li>• Clear explanation of fees, limitations and risks</li>
-      <li>• Card data structured for side-by-side viewing</li>
-      <li>• Focus on real-world use, not just headline bonuses</li>
-    </ul>
-    <p class="small">
-      For details about scoring and ranking, see the methodology pages linked from Choose.
-    </p>
-  </section>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>How Credit Card Comparison Pages Are Built and Interpreted</h1>
+        <p class="hero-lead">
+          CompareCards.Creditcard explains, in neutral language, how credit card comparison pages are structured: which data points are typically used, how categories are defined, and how comparisons relate to official issuer documentation and eligibility criteria.
+        </p>
+        <a class="cta" href="https://choose.creditcard/compare/?utm_source=comparecards.creditcard&utm_medium=referral&utm_campaign=hero_cta">
+          Explore the Comparison hub
+        </a>
+      </div>
+    </section>
 
-  <!-- Final CTA -->
-  <section class="section">
-    <h2>Open the main compare view</h2>
-    <p class="small">
-      CompareCards.creditcard exists as a clean, memorable entry point.  
-      The actual side-by-side tables are hosted on:
-    </p>
-    <a class="cta"
-       href="https://choose.creditcard/compare?utm_source=comparecards.creditcard&utm_medium=referral&utm_campaign=comparecards_hub">
-      Go to Compare on Choose.Creditcard
-    </a>
-  </section>
+    <!-- Overview -->
+    <section id="overview" class="section">
+      <h2>What a Credit Card Comparison Page Usually Shows</h2>
+      <p>Card comparison pages are designed to summarise selected information from multiple products in a single view. Instead of replicating full product terms, they highlight key dimensions such as fees, rewards, protections, eligibility signals and network acceptance.</p>
+      <p>Each comparison framework chooses what to emphasise. Some pages focus on rewards and bonuses, others on costs and protections, and others on specific use-cases such as travel, student life, rebuilding credit or business spending. Understanding this framing helps you read the table correctly.</p>
+    </section>
 
-  <footer class="footer">
-    Part of <strong>The CreditCard Collection</strong> — by ronarn  
-    <br>Contact: <a href="mailto:support@ronarn.com">support@ronarn.com</a>
+    <!-- Mechanics -->
+    <section id="mechanics" class="section">
+      <h2>How Comparison Tables Are Typically Structured</h2>
+      <p>Behind a comparison table there is usually a defined set of columns and rules that describe how each product is displayed. Common structural elements include:</p>
+      <ul class="list">
+        <li><strong>Core product identifiers</strong> – name, issuing bank, card network and whether the card is consumer, student, business or secured.</li>
+        <li><strong>Pricing and fees</strong> – annual fees, selected interest rates, foreign transaction fees and a small set of other charges.</li>
+        <li><strong>Rewards and benefits</strong> – earn rates, bonus structures and a summary of notable protections or perks.</li>
+        <li><strong>Eligibility indicators</strong> – broad credit-score bands, residency or age requirements when such signals can be summarised.</li>
+        <li><strong>Link behaviour</strong> – one or more links out to official issuer pages, documentation and application flows.</li>
+      </ul>
+      <p>Because comparison pages must stay readable, they cannot show every clause from the product’s full terms. They are best viewed as structured summaries that should always be read together with the official documentation.</p>
+    </section>
+
+    <section class="section">
+      <h2>Ranking, Ordering and Filters</h2>
+      <p>Comparison layouts often allow cards to be ordered or filtered according to one or more criteria. Examples include sorting by estimated annual fee, highlighting cards with no foreign transaction fees, or grouping products by rewards type.</p>
+      <p>Documentation-style comparisons aim to make these rules transparent. A page may explain whether cards are listed alphabetically, whether some positions are editorially highlighted, or whether a specific scoring model is used to assign ranks or labels. This helps distinguish structured information from opinion.</p>
+    </section>
+
+    <section class="section">
+      <h2>Limitations and Interpretation</h2>
+      <p>Any comparison has limitations. Not all products in the market will be included, and the information shown is constrained by space, update cycles and data availability. In addition, offers, pricing and eligibility criteria can change after a page has been published or updated.</p>
+      <p>For that reason, comparison pages should not be treated as definitive or personalised advice. They are a starting point that can help you identify options to research further using the issuer’s own documentation, regulatory disclosures and, if needed, independent professional guidance.</p>
+    </section>
+
+    <!-- Comparison / table-style overview -->
+    <section id="compare" class="section">
+      <h2>Key Dimensions Used in Card Comparisons</h2>
+      <div class="table-wrap">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Dimension</th>
+              <th>Typical Data Shown</th>
+              <th>How to Read It</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Fees &amp; Pricing</td>
+              <td>Annual fee, selected APRs, foreign transaction fee</td>
+              <td>Provides a simplified view of ongoing and potential costs. Always check the full pricing section in the issuer’s terms for complete details.</td>
+            </tr>
+            <tr>
+              <td>Rewards &amp; Benefits</td>
+              <td>Earn rates, bonus categories, headline perks</td>
+              <td>Shows where the card is designed to provide value, but may not list every exclusion or cap. Full programme rules remain authoritative.</td>
+            </tr>
+            <tr>
+              <td>Protections</td>
+              <td>Examples of travel, purchase or fraud protections</td>
+              <td>Illustrates the presence of protections, not their full legal wording. Detailed conditions and limits are described in official benefit guides.</td>
+            </tr>
+            <tr>
+              <td>Eligibility Signals</td>
+              <td>Broad credit-score bands or profile labels</td>
+              <td>Gives a general sense of the intended audience. Actual eligibility decisions are made by the issuer using their own internal criteria.</td>
+            </tr>
+            <tr>
+              <td>Use-case Tags</td>
+              <td>Labels such as “travel”, “cash-back” or “credit rebuild”</td>
+              <td>Helps group cards for browsing and filtering, but does not mean a card is the “best” for any individual situation.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="small">
+        For practical examples of how these dimensions appear in live tables, visit
+        <a href="https://choose.creditcard/compare/?utm_source=comparecards.creditcard&utm_medium=referral&utm_campaign=comparison_section">
+          the Comparison hub on Choose.Creditcard
+        </a>.
+      </p>
+    </section>
+
+    <!-- Cluster links -->
+    <section class="section">
+      <h2>Explore Related Comparison &amp; Evaluation Microsites</h2>
+      <div class="cluster-grid">
+        <a class="cluster-card" href="https://comparecard.creditcard/?utm_source=comparecards.creditcard&utm_medium=referral&utm_campaign=cluster_comparecard">
+          <h3>CompareCard.Creditcard</h3>
+          <p>Documentation-style view focused on individual card-to-card comparisons.</p>
+        </a>
+        <a class="cluster-card" href="https://evaluate.creditcard/?utm_source=comparecards.creditcard&utm_medium=referral&utm_campaign=cluster_evaluate">
+          <h3>Evaluate.Creditcard</h3>
+          <p>How to evaluate card features, costs and documentation side by side.</p>
+        </a>
+        <a class="cluster-card" href="https://assess.creditcard/?utm_source=comparecards.creditcard&utm_medium=referral&utm_campaign=cluster_assess">
+          <h3>Assess.Creditcard</h3>
+          <p>Neutral language for assessing risk, suitability and structural design.</p>
+        </a>
+        <a class="cluster-card" href="https://benchmark.creditcard/?utm_source=comparecards.creditcard&utm_medium=referral&utm_campaign=cluster_benchmark">
+          <h3>Benchmark.Creditcard</h3>
+          <p>Conceptual overview of benchmarking cards against reference points.</p>
+        </a>
+        <a class="cluster-card" href="https://rank.creditcard/?utm_source=comparecards.creditcard&utm_medium=referral&utm_campaign=cluster_rank">
+          <h3>Rank.Creditcard</h3>
+          <p>How rankings, labels and badges can be created and interpreted.</p>
+        </a>
+        <a class="cluster-card" href="https://list.creditcard/?utm_source=comparecards.creditcard&utm_medium=referral&utm_campaign=cluster_list">
+          <h3>List.Creditcard</h3>
+          <p>List-style presentations of cards and how they differ from full tables.</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- Collection section -->
+    <section class="section">
+      <h2>Part of The CreditCard Collection</h2>
+      <p class="small">
+        CompareCards.Creditcard is one structural spoke in <strong>The CreditCard Collection</strong> — a network of focused microsites and hubs operated by ronarn AS. Each site has a narrow scope and a consistent, documentation-style layout.
+      </p>
+      <p class="small">
+        This page does not issue cards, make eligibility decisions or provide personalised recommendations. It explains how comparison pages are typically assembled so that readers can better understand what is being shown and what remains outside the scope of any table.
+      </p>
+      <p class="small">
+        All content is informational only and does not constitute financial, investment, tax or legal advice. Always rely on official product terms, regulatory disclosures and, where appropriate, independent professional guidance for decisions about credit products.
+      </p>
+
+      <!-- Comparison hub snippet -->
+      <p class="text-xs text-slate-500 mt-6">
+        For detailed examples of live comparison tables and category overviews, see the
+        <a href="https://choose.creditcard/compare/?utm_source=comparecards.creditcard&utm_medium=referral&utm_campaign=hub_compare"
+           class="font-medium hover:text-slate-900">
+          Comparison hub
+        </a>
+        on <a href="https://choose.creditcard/?utm_source=comparecards.creditcard&utm_medium=referral&utm_campaign=hub_home" class="font-medium hover:text-slate-900">Choose.Creditcard</a>.
+      </p>
+    </section>
+
+    <!-- Bottom CTA -->
+    <section class="section">
+      <h2>Using Comparison Pages as a Starting Point</h2>
+      <p class="small">
+        Use CompareCards.Creditcard to understand how comparison views are structured, then move to the Comparison hub on Choose.Creditcard to see those principles applied in practice when browsing real card tables and category overviews.
+      </p>
+      <a class="cta" href="https://choose.creditcard/compare/?utm_source=comparecards.creditcard&utm_medium=referral&utm_campaign=bottom_cta">
+        Go to the Comparison hub
+      </a>
+    </section>
+  </main>
+
+  <footer class="mini-footer">
+    <p class="mini-footer-main">© 2025 The CreditCard Collection — ronarn AS</p>
+    <p class="mini-footer-contact">
+      Contact: <a href="mailto:support@cc.creditcard">support@cc.creditcard</a>
+    </p>
   </footer>
-</div>
-
 </body>
 </html>
